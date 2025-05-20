@@ -1,0 +1,8 @@
+import pyaudio
+
+SAMPLE_RATE = 16000  # number of frames per second
+FORMAT = pyaudio.paInt16
+FREQUENCY = 200  # Hz
+BEEP_LENGTH_IN_MS = 150
+FRAMES_PER_BEEP = (BEEP_LENGTH_IN_MS / 1000) * SAMPLE_RATE
+PATTERN = "111000111"
